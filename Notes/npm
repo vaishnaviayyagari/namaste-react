@@ -1,0 +1,43 @@
+package.json is the configuration for npm.
+package.json will manage all the packages that we install in our system.
+That file is also known as dependencies.
+Our project is dependent on lot of packages.
+Those pacakges with the project is dependent on are dependencies and npm manages that.
+npm takes care of the version of that package.
+It will take care of it in package.json.
+
+//
+Now we will install the dependencies.
+Most important package in our project is bundler.
+When we separate html, css and js file, we need to bundle it together(our whole code needs to be minified, it needs to be compressed) before it can be sent to prod.
+A bundler helps us to do all those things.
+weppack, parcel etc are bundlers.
+Bundler packages your app properly so that it can be pushed to production
+create-react-app uses Webpack and babel behind the scenes.
+In our project, we will be using parcel.
+Parcel is easy to configure.
+
+//
+There are 2 types of dependencies we can install 1)dev dependencies 2)Normal dependencies
+Dev dependency : it is generally req in our development phase
+Normal dependecy:used in production also
+The minification of parcel is done in dev phase
+So inorder to install parcel as dev dependency, we need to tell npm that we need parcel into our app but we need it as a dev dependency, but not a normal one like production.
+So the command npm install -D parcel
+Know the diff b/w ~ and ^
+If a new version comes ,and we have ^ in that, parcel will automatically update the version of the package.
+If we put ~, it will upgrade a major update.
+Using ^ is safer because minor updates can be updated.
+
+
+There is folder called node_modules which was installed after executimg npm install parcel.
+node_modules contains all the code that we fetched from npm.
+package.json is a configuration for our npm.
+node_modules is like the database, it contains actual data of the dependencies that our project needs.
+node-modules have many folders, since we have installed only parcel, parcel related folder 
+would be easy to go.
+We have a dependency on parcel for our project, but parcle as a project has its own dependencies.
+Those dependencies can have their own dependencies.[This is known as Transitive dependencies]
+All the dependencies will have their own package.json.
+If we have package-lock.json and package.json, we can recreate our node_modules.
+
