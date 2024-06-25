@@ -1,7 +1,3 @@
-#heading {
-    color:red;
-
-}
-#parent {
-    color:blue;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

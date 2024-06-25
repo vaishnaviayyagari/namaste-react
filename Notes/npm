@@ -41,3 +41,10 @@ Those dependencies can have their own dependencies.[This is known as Transitive 
 All the dependencies will have their own package.json.
 If we have package-lock.json and package.json, we can recreate our node_modules.
 
+
+
+// JSX (transpiled before it reaches the JS) - PARCEL -Babel
+// JSX => BABEL transpiles it to React.CreateElement => ReactElement - JS Object =>HTMLElement(render)
+
+
+Config Driven UI:
